@@ -81,6 +81,7 @@ Wide intervals reflect the modest sample size; replication on larger corpora is 
 TBCA-Amazon-Laptop-Reviews/
 │
 ├── TBCA_Colab_Notebook.ipynb   # Complete pipeline (Google Colab)
+├── TBCA_Colab_Notebook.py      # Complete pipeline (Python file)
 ├── tbca_results.json           # Structured results
 ├── tbca_tables.tex             # LaTeX tables for paper
 ├── tbca_results.pdf            # Figures (300 dpi)
