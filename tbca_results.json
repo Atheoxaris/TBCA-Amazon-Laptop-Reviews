@@ -37,10 +37,6 @@
     "Laptop C (Budget)": {
       "utility": 0.5618,
       "prob": 0.3067
-    },
-    "metadata": {
-      "widgets": {
-      "application/vnd.jupyter.widget-state+json": { ... }
-  }
+    }
   }
 }
