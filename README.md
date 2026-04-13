@@ -44,17 +44,19 @@ Axiomatic Consistency Verification
 
 ## Results
 
-### Part-Worth Utility Weights (n=200 reviews)
+### Part-Worth Utility Weights (n=200 reviews, stratified sample)
 
-| Attribute | Raw w̃ᵢ | Debiased ŵᵢ | Δ |
-|---|---|---|---|
-| Battery life | 0.1279 | 0.0199 | −0.1080 ↓ |
-| Display quality | 0.0339 | 0.1747 | +0.1408 ↑ |
-| Performance | 0.3498 | 0.2836 | +0.2368 ↑ |
-| Build quality | 0.4112 | 0.2454 | −0.1658 ↓ |
-| Value for money | 0.3802 | 0.2763 | −0.1038 ↓ |
+| Attribute | Raw w̃ᵢ | Debiased ŵᵢ | Δ | 95% CI |
+|---|---|---|---|---|
+| Battery life    | 0.1279 | 0.0199 | −0.1080 ↓ | [0.005, 0.391] |
+| Display quality | 0.0339 | 0.1747 | +0.1408 ↑ | [0.012, 0.439] |
+| Performance     | 0.0469 | 0.2836 | +0.2368 ↑ | [0.011, 0.374] |
+| Build quality   | 0.4112 | 0.2454 | −0.1658 ↓ | [0.025, 0.424] |
+| Value for money | 0.3802 | 0.2763 | −0.1038 ↓ | [0.045, 0.484] |
 
-**R² (CV-5):** 0.600 (raw) · 0.563 (debiased)
+**R² (CV-5):** 0.600 (raw) · 0.563 (debiased)  
+**Bootstrap 95% CI** based on B=1,000 resamples (n=186 reviews with ≥1 mapped aspect).  
+Wide intervals reflect the modest sample size; replication on larger corpora is warranted.
 
 ### Softmax Choice Probabilities
 
@@ -114,7 +116,7 @@ The notebook downloads automatically via the Kaggle API:
 - **Dataset:** [Amazon Laptop Review](https://www.kaggle.com/datasets/ashwinishet/amazon-laptop-review)
 - **Source:** Kaggle (public, license: unknown)
 - **Size:** 511 reviews · 3 columns (comments, rating, title)
-- **Working sample:** 200 reviews (stratified)
+- **Working sample:** 200 reviews (stratified random sample preserving star-rating distribution, `random_state=42`)
 
 A Kaggle account and API token are required. See Cell 2 of the notebook for setup instructions.
 
