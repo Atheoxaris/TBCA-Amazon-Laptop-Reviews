@@ -1,0 +1,38 @@
+\begin{table}[ht]
+\centering
+\caption{Part-Worth Utility Weights: Raw vs.\ PT-Debiased (Real Data)}
+\label{tab:part_worths_empirical}
+\begin{tabular}{lrrr}
+\toprule
+Attribute & Raw $\tilde{w}_i$ & Debiased $\hat{w}_i$ & $\Delta$ \\
+\midrule
+Battery Life & 0.1279 & 0.0199 & $-0.1080\;\downarrow$ \\
+Display Quality & 0.0339 & 0.1747 & $+0.1408\;\uparrow$ \\
+Performance & 0.0469 & 0.2836 & $+0.2368\;\uparrow$ \\
+Build Quality & 0.4112 & 0.2454 & $-0.1658\;\downarrow$ \\
+Value For Money & 0.3802 & 0.2763 & $-0.1038\;\downarrow$ \\
+\midrule
+$\Sigma$ & 1.0000 & 1.0000 & \\
+\midrule
+\multicolumn{4}{l}{R\textsuperscript{2} (CV-5): 0.5628 (debiased),
+0.5996 (raw)}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Softmax Choice Probabilities (MNL/RUM, Eq.~12)}
+\label{tab:choice_probs_empirical}
+\begin{tabular}{lrr}
+\toprule
+Alternative & $\hat{V}_j$ & $P_j$ \\
+\midrule
+Laptop A (Premium) & 0.6695 & 0.3416 \\
+Laptop B (Performance) & 0.6984 & 0.3516 \\
+Laptop C (Budget) & 0.5618 & 0.3067 \\
+\midrule
+$\Sigma$ & & 1.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}
