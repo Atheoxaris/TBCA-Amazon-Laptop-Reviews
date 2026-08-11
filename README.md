@@ -1,4 +1,4 @@
-# TICA — Text-Informed Conjoint Analysis
+# TICA : Text-Informed Conjoint Analysis
 ## Empirical Proof-of-Concept: Amazon Laptop Reviews
 
 > **Paper:** *Bridging Decision Theory and Machine Learning: A Unified Framework for Consumer Preference Estimation from Unstructured Text*  
