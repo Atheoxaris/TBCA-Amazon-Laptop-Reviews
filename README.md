@@ -1,4 +1,4 @@
-# TBCA — Text-Based Conjoint Analysis
+# TICA — Text-Based Conjoint Analysis
 ## Empirical Proof-of-Concept: Amazon Laptop Reviews
 
 > **Paper:** *Bridging Decision Theory and Machine Learning: A Unified Framework for Consumer Preference Estimation from Unstructured Text*  
@@ -10,7 +10,7 @@
 
 ## Overview
 
-This repository contains the empirical proof-of-concept for the **Text-Based Conjoint Analysis (TBCA)** framework introduced in the paper. The pipeline extracts consumer preference utilities directly from unstructured product reviews, without requiring pre-specified conjoint attributes or controlled experimental designs.
+This repository contains the empirical proof-of-concept for the **Text-Informed Conjoint Analysis (TICA)** framework introduced in the paper. The pipeline extracts consumer preference utilities directly from unstructured product reviews, without requiring pre-specified conjoint attributes or controlled experimental designs.
 
 The implementation validates three core theoretical equivalences established in the paper:
 
